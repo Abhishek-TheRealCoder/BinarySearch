@@ -1,0 +1,30 @@
+// Binary Search On Answer Template | Generic Template
+
+// Generally, we identify that binary search is applicable with 3 conditions :
+
+// Constraint of n <= 10 ^ 5
+// Question asks to find the minimum of maximums , maximum of minimums or some minimum/ maximum / at least
+// Montonic nature of the problem
+// These types of questions are also known as binary search on answer.
+
+bool isValid(vector<int>& nums, int mid, int k){
+	// we return either true or false based on the criteria 'k'
+}
+
+int function(vector<int>& nums, int k) {
+   // nums is input array and m is some criteria on which we apply binary search
+    int l = minimum  possible answer  , r = maximum possible answer  ;
+    int ans = -1 ;
+	
+    while(l <= r){
+        int mid = (l + r)/2 ;
+        if(isValid(nums, mid, k) == true){
+            ans = mid ;
+            r = mid-1 ;
+        }else{
+            l = mid + 1 ;
+        }
+		
+    }
+    return ans ;
+}
